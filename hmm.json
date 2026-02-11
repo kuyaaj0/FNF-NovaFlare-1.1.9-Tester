@@ -4,7 +4,7 @@
       "name": "lime",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "develop",
       "url": "https://github.com/NovaFlare-Engine-haxelib/lime"
     },
     {
@@ -18,7 +18,7 @@
       "name": "flixel",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "dev",
       "url": "https://github.com/NovaFlare-Engine-haxelib/flixel"
     },
     {
@@ -30,7 +30,7 @@
       "name": "flixel-ui",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "dev",
       "url": "https://github.com/NovaFlare-Engine-haxelib/flixel-ui"
     },
     {
@@ -69,7 +69,7 @@
       "name": "hxcpp",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "master",
       "url": "https://github.com/NovaFlare-Engine-haxelib/hxcpp"
     },
     {
@@ -124,7 +124,7 @@
       "name": "flxanimate",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "master",
       "url": "https://github.com/beihu235/flxanimate"
     },
     {
