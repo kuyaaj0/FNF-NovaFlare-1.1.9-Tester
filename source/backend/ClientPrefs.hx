@@ -112,6 +112,10 @@ import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
 	public var splashRGB:Bool = true;
 	public var showSplash:Bool = true;
 	public var splashAlpha:Float = 0.6;
+	// Smooth s
+	public var smoothScore:Bool = true;
+	public var smoothHealth:Bool = true;
+	public var commaSeperated:Bool = true;
 
 	// Input
 	// Moblie Input Backend s
