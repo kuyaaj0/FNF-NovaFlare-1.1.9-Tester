@@ -1,5 +1,6 @@
 package native;
 
+#if windows
 @:cppFileCode('
 #include <windows.h>
 
@@ -46,8 +47,21 @@ class NativeGLWindow
         UpdateWindow(hWnd);
         res = 1;
     ')
-    static public function showRedCircleWindow(res:Int = 0):Int
+    public static function showRedCircleWindow(res:Int = 0):Int
     {
         return res;
     }
 }
+
+#elseif mac || linux || android
+
+class NativeGLWindow
+{
+    public static function showRedCircleWindow(res:Int = 0):Int
+    {
+        trace("⚠️ NativeGLWindow is only available on Windows (skipped for macOS, Linux, and Android).");
+        return res;
+    }
+}
+
+#end
