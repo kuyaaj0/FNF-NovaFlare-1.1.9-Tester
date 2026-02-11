@@ -205,6 +205,7 @@ class PlayState extends MusicBeatState
 
 	public var gfSpeed:Int = 1;
 	public var health(default, set):Float = 1;
+	public var smoothHealth:Float = 1;
 	public var combo:Int = 0;
 	public var highestCombo:Int = 0;
 
