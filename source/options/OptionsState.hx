@@ -54,7 +54,7 @@ class OptionsState extends MusicBeatState
 		instance = this;
 
 		naviArray = [
-			new NaviData('NovaFlare Engine', ['General','User Interface','GamePlay','Game UI','Skin','Input','Audio','Graphics','Maintenance'])
+			new NaviData('NovaFlare Engine', ['General','User Interface','GamePlay','Game UI','Smooth Settings','Skin','Input','Audio','Graphics','Maintenance'])
 		];
 		
 		var path = Paths.mods('stageScripts/options/');
@@ -286,6 +286,8 @@ class OptionsState extends MusicBeatState
 				obj = new GamePlayGroup(outputX, outputY, outputWidth, outputHeight);
 			case 'Game UI':
 				obj = new UIGroup(outputX, outputY, outputWidth, outputHeight);
+			case 'Smooth Settings':
+				obj = new SmoothGroup(outputX, outputY, outputWidth, outputHeight);
 			case 'Skin':
 				obj = new SkinGroup(outputX, outputY, outputWidth, outputHeight);
 			case 'Input':
@@ -475,4 +477,5 @@ class OptionsState extends MusicBeatState
 		}
 	}
 }
+
 
