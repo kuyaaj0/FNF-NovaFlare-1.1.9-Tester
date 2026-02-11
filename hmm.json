@@ -69,7 +69,7 @@
       "name": "hxcpp",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/NovaFlare-Engine-haxelib/hxcpp"
     },
     {
@@ -83,7 +83,7 @@
       "name": "hscript-iris-improved",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/beihu235/hscript-iris-improved"
     },
     {
@@ -124,7 +124,7 @@
       "name": "flxanimate",
       "type": "git",
       "dir": null,
-      "ref": "master",
+      "ref": "main",
       "url": "https://github.com/beihu235/flxanimate"
     },
     {
