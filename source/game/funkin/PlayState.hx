@@ -283,6 +283,7 @@ class PlayState extends MusicBeatState
 	public var camPause:FlxCamera;
 	public var cameraSpeed:Float = 1;
 
+	public var commaSeparated:Bool = true;
 	public var songScore:Int = 0;
 	public var smoothScore:Float = 0;
 	public var songHits:Int = 0;
