@@ -2690,6 +2690,27 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 		callOnScripts('onUpdatePost', onUpdatePostArgs);
 	}
 
+		// === Smooth Score ===
+			if (ClientPrefs.data.smoothScore)
+			{
+				smoothScore = CoolUtil.smoothLerp(smoothScore, songScore, 0.25);
+			}
+				else
+				{
+					smoothScore = songScore;
+				}
+
+		// === Smooth Health ===
+			if (ClientPrefs.data.smoothHealth)
+			{
+				smoothHealth = CoolUtil.smoothLerp(smoothHealth, health, 0.3);
+			}
+				else
+				{
+					smoothHealth = health;
+				}
+	}
+
 	override function draw() {
 	    /*
 		if (camZooming)
