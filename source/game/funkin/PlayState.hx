@@ -2760,24 +2760,23 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 	#end
 
 	public function scoreTxtUpdate()
+{
+	scoreTxt.text = "NPS: " + nps + " (Max: " + maxNPS + ")";
+
+	if (ClientPrefs.data.playOpponent ? !cpuControlled_opponent : !cpuControlled)
 	{
-		scoreTxt.text = "NPS: " + nps + " (Max: " + maxNPS + ")";
+		scoreTxt.text += " | "
+			+ "Score: " + CoolUtil.formatNumberWithCommas(Std.int(smoothScore), commaSeparated)
+			+ " | Misses: " + songMisses
+			+ " | Accuracy: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
+			+ " | ";
 
-		if (ClientPrefs.data.playOpponent ? !cpuControlled_opponent : !cpuControlled)
-		{
-			scoreTxt.text += " | " + "Score: " + songScore + " | Misses: " + songMisses + " | Accuracy: " + Math.ceil(ratingPercent * 10000) / 100 + '%'
-				+ " | ";
-
-			if (ratingName == 'N/A')
-			{
-				scoreTxt.text += 'N/A';
-			}
-			else
-			{
-				scoreTxt.text += '(' + ratingFC + ') ' + ratingName;
-			}
-		}
+		if (ratingName == 'N/A')
+			scoreTxt.text += 'N/A';
+		else
+			scoreTxt.text += '(' + ratingFC + ') ' + ratingName;
 	}
+}
 
 	// Health icon updaters
 	public dynamic function updateIconsScale(elapsed:Float)
