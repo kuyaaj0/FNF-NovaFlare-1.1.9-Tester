@@ -4,7 +4,7 @@
       "name": "lime",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "dev",
       "url": "https://github.com/NovaFlare-Engine-haxelib/lime-8.3.0"
     },
     {
