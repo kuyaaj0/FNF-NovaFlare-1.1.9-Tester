@@ -4906,6 +4906,9 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 		characterBopper(curBeat);
 
 		super.beatHit();
+
+		callOnLuas('onModChartBeat', [funkin_modchart_instance, curBeat]);
+		
 		lastBeatHit = curBeat;
 
 		setOnScripts('curBeat', curBeat);
