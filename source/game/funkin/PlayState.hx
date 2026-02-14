@@ -1583,6 +1583,7 @@ class PlayState extends MusicBeatState
 		{
 			videoCutscene.resume();
 		};
+		pausedTimePos = time;
         Conductor.songPosition = time;
         if (timing != null) timing.setPosition(time);
 	}
@@ -2211,7 +2212,7 @@ class PlayState extends MusicBeatState
 			persistentUpdate = true;
 			persistentDraw = true;
 			if (FlxG.sound.music != null && !startingSong)
-				resyncVocals(true, pausedSongPos);
+				resyncVocals(true, pausedTimePos);
 
 			FlxTimer.globalManager.forEach(function(tmr:FlxTimer) if (!tmr.finished)
 				tmr.active = true);
@@ -2353,7 +2354,7 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 	var allowDebugKeys:Bool = true;
 	var pressPaue:Int = 0;
 
-	var pausedSongPos:Float = 0;
+	var pausedTimePos:Float = 0;
 
 	override function update(elapsed:Float)
 	{
@@ -2859,7 +2860,7 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 		persistentDraw = true;
 		paused = true;
 		if (timing != null) timing.pause();
-		pausedSongPos = Conductor.songPosition;
+		pausedTimePos = Conductor.songPosition;
 
 		keyboardViewer.save();
 
