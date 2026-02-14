@@ -14,7 +14,7 @@ import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
 	// General
 	public var framerate:Int = 60;
 	public var drawFramerate:Int = 60;
-	public var splitUpdate:Bool = true;
+	public var lockRender:Bool = true;
 	public var colorblindMode:String = 'None';
 	public var lowQuality:Bool = false;
 	public var gameQuality:Int = #if mobile 0 #else 1 #end;
