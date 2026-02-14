@@ -871,6 +871,10 @@ class PlayState extends MusicBeatState
 		
 		callOnScripts('onCreatePost');
 
+		#if LUA_ALLOWED
+		callOnLuas('onModChartInit', [funkin_modchart_instance]);
+		#end
+
 		cacheCountdown();
 
 		super.create();
