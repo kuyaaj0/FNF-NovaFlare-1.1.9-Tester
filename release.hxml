@@ -9,6 +9,8 @@
 --macro trandom.InitMacro.checkWindows()
 -cp D:/game/FNF-NovaFlare-Engine/.haxelib/trandom/1,0,0/src
 -D trandom=1.0.0
+-cp D:/game/FNF-NovaFlare-Engine/.haxelib/hxWebSockets/git
+-D hxWebSockets=1.4.0
 -cp D:/game/FNF-NovaFlare-Engine/.haxelib/spine-haxe/git/spine-haxe/spine-haxe
 -D spine-haxe=4.2.7
 -cp D:/game/FNF-NovaFlare-Engine/.haxelib/linc_luajit/git/source
