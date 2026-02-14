@@ -19,9 +19,9 @@ class GeneralGroup extends OptionCata
 		addOption(option);
 		option.onChange = onChangeDrawFramerate;
 
-		var option:Option = new Option(this, 'splitUpdate', BOOL);
+		var option:Option = new Option(this, 'lockRender', BOOL);
 		addOption(option);
-		option.onChange = onChangeSplitUpdate;
+		option.onChange = onChangelockRender;
 
 		var langArray:Array<String> = languageArray();
 		var option:Option = new Option(this, 'language', STRING, langArray);
@@ -114,7 +114,7 @@ class GeneralGroup extends OptionCata
 
 	function onChangeSplitUpdate()
 	{
-		FlxG.stage.application.window.splitUpdate = ClientPrefs.data.splitUpdate;
+		FlxG.stage.application.window.lockRender = ClientPrefs.data.lockRender;
 	}
 
 	function onChangeFilter()
