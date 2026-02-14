@@ -22,6 +22,7 @@ import flixel.animation.FlxAnimationController;
 import flixel.input.touch.FlxTouch;
 
 import modchart.Manager;
+import modchart.ManagerLua;
 
 import objects.AttachedSprite;
 
