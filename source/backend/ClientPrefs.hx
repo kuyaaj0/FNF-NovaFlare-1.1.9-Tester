@@ -566,7 +566,7 @@ class ClientPrefs
 		}
 		#end
 
-		FlxG.stage.application.window.splitUpdate = data.splitUpdate;
+		FlxG.stage.application.window.lockRender = data.lockRender;
 		FlxG.stage.application.window.drawFrameRate = data.drawFramerate;
 
 		if (data.framerate > FlxG.drawFramerate)
