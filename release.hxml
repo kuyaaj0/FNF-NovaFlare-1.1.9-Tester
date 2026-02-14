@@ -42,8 +42,7 @@
 -D grig.audio=0.0.0
 -cp D:/game/FNF-NovaFlare-Engine/.haxelib/flxsoundfilters/git/source
 -D flxsoundfilters=0.1.0
--cp D:/game/FNF-NovaFlare-Engine/.haxelib/haxeui-flixel/git
--D haxeui-flixel=1.7.0
+-cp D:/game/FNF-NovaFlare-Engine/.haxelib/haxeui-flixel/1,7,0
 -D haxeui
 -cp D:/game/FNF-NovaFlare-Engine/.haxelib/haxeui-core/1,7,0
 -D haxeui-core=1.7.0
