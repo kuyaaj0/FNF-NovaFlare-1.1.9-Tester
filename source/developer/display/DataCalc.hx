@@ -72,7 +72,7 @@ class DataCalc
 			drawFrameTime = drawFrameTime * 0.9 + drawWait / drawCount * 0.1;
 
 		drawFPS = Math.floor(1000 / drawFrameTime + 0.5);
-		if (ClientPrefs.data.splitUpdate) {
+		if (ClientPrefs.data.lockRender) {
 			if (drawFPS > ClientPrefs.data.drawFramerate) {
 				drawFPS = ClientPrefs.data.drawFramerate;
 			}
