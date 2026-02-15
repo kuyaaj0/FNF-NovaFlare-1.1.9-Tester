@@ -477,7 +477,9 @@ class MainMenuState extends MusicBeatState
 
 			if (FlxG.keys.justPressed.SHIFT)
 			{
-				native.NativeGLWindow.showRedCircleWindow();
+
+				MusicBeatState.switchState(new ServerConnectState());
+				//native.NativeGLWindow.showRedCircleWindow();
 
 						//FlxTransWindow.getWindowsTransparent();
 
