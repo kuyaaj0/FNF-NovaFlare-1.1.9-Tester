@@ -3,8 +3,7 @@
         
         ".github/workflows/android.yml"
     ],
-    "haxelib.executable": "auto",
-    "haxe.executable": "auto",
+    "haxelib.executable": "D:/game/FNF-NovaFlare-Engine/.haxelib",
     "haxe.configurations": [
         {
             "args": ["release.hxml"]
