@@ -22,6 +22,7 @@ import editors.MasterEditorMenu;
 import options.OptionsState;
 
 import game.funkin.backend.WeekData;
+import states.ServerConnectState;
 
 
 import cpp.Lib;
