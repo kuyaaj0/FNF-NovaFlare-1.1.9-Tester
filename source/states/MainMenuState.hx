@@ -5,7 +5,7 @@ import haxe.Json;
 import sys.thread.Thread;
 import sys.thread.Mutex;
 
-import openfl.Lib;
+//import openfl.Lib;
 
 import funkin.vis.dsp.MusicBPMDetector;
 
