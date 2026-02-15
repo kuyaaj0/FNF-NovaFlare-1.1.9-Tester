@@ -59,11 +59,18 @@
       "version": "1.0.0"
     },
     {
+      "name": "hxWebSockets",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/ianharrigan/hxWebSockets.git"
+    },
+    {
       "name": "modcharts",
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/modcharts"
+      "url": "https://github.com/kuyaaj0/modcharts_tester"
     },
     {
       "name": "hxcpp",
