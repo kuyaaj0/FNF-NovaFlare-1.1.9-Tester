@@ -125,7 +125,7 @@ jobs:
           CURRENT_VERSION="${{ steps.get_version.outputs.current_version }}"
     
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            NEW_VERSION="${CURRENT_VERSION/-main/-$COMMIT_SHA}"
+            NEW_VERSION="${CURRENT_VERSION/-dev/-$COMMIT_SHA}"
             haxelib run lime build android -Dcommit_sha=$COMMIT_SHA -Dbuild_number=$NEW_VERSION
           else
             haxelib run lime build android -Dcommit_sha=$COMMIT_SHA -Dbuild_number=$CURRENT_VERSION
