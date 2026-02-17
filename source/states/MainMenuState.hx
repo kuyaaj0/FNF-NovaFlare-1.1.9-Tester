@@ -5,7 +5,7 @@ import haxe.Json;
 import sys.thread.Thread;
 import sys.thread.Mutex;
 
-//import openfl.Lib;
+import openfl.Lib;
 
 import funkin.vis.dsp.MusicBPMDetector;
 
@@ -25,7 +25,7 @@ import game.funkin.backend.WeekData;
 import states.ServerConnectState;
 
 
-import cpp.Lib;
+//import cpp.Lib;
 
 @:access(flixel.sound.FlxSound._sound)
 @:access(openfl.media.Sound.__buffer)
