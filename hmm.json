@@ -12,7 +12,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/openfl"
+      "url": "https://github.com/NovaFlare-Engine-haxelib/openfl-9.4.2"
     },
     {
       "name": "flixel",
