@@ -20,6 +20,9 @@ class SmoothGroup extends OptionCata
 		var option:Option = new Option(this, 'smoothScore', BOOL);
 		addOption(option, true);
 
+		var option:Option = new Option(this, 'Comma Feature', TEXT);
+		addOption(option);
+
 		var option:Option = new Option(this, 'commaSeperated', BOOL);
 		addOption(option, true);
 		changeHeight(0); //初始化真正的height
